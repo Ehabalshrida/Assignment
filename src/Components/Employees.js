@@ -44,7 +44,7 @@ export default class Employees extends Component {
         newList.push(item);
       }
     });
-    this.setState({ list: newList });
+    this.setState({ list: newList,showUpdateModal: false });
   };
   handleDeleteForm = () => {
     let newList = [];
@@ -53,7 +53,7 @@ export default class Employees extends Component {
         newList.push(item);
       }
     });
-    this.setState({ list: newList });
+    this.setState({ list: newList,showDeleteModal: false });
   };
   render() {
     return (
