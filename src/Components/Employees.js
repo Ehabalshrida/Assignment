@@ -31,7 +31,7 @@ export default class Employees extends Component {
     this.setState({ firstName: e.target.value });
   };
   handleLastName = (e) => {
-    this.setState({ firstName: e.target.value });
+    this.setState({ lastName: e.target.value });
   };
   handleUpdatForm = () => {
     let newList = [];
@@ -58,6 +58,7 @@ export default class Employees extends Component {
   render() {
     return (
       <>
+      <div className="tableDiv">
         <table>
           <tr>
             <th>Fist Name</th>
@@ -89,6 +90,7 @@ export default class Employees extends Component {
             );
           })}
         </table>
+        </div>
         {this.state.showUpdateModal && (
           <UpdateModal
             showUpdateModal={this.state.showUpdateModal}
