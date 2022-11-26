@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import swal from "sweetalert";
 import { useNavigate } from "react-router-dom";
-
 export default function Login() {
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
@@ -12,7 +11,7 @@ export default function Login() {
     console.log({ userName: userName, password: password });
     if (userName == "test@desaisiv.com" && password == "P@ssw0rd") {
       swal("You Have Sucess Login");
-      navigate("employees");
+      navigate('employees');
     } else {
       swal("You have Entered Wronge Values");
     }
@@ -45,6 +44,7 @@ export default function Login() {
         />
         <br />
         <button type="submit">Login</button>
+
       </form>
     </>
   );

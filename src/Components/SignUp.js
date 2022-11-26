@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useFormik } from "formik";
 import swal from "sweetalert";
+import { Button } from 'primereact/button';
 export default function SignUp() {
   const [firstName, setFirstName] = useState("");
   const [lastName, setLastName] = useState("");
@@ -149,7 +150,9 @@ export default function SignUp() {
           {getFormErrorMessage("nationality")}
         </>
         <>
-          <button type="submit">Register</button>
+          {/* <button type="submit">Register</button> */}
+          <Button type="submit" label="Register" className="mt-2" />
+
         </>
       </form>
     </>
