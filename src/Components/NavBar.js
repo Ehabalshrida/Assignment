@@ -12,9 +12,15 @@ export default function NavBar() {
   return (
     <>
       <nav className="nav">
-        <NavLink style={navLinkStyles} to="/"></NavLink>
-        <NavLink style={navLinkStyles} to="/employees"></NavLink>
-        <NavLink style={navLinkStyles} to="login"></NavLink>
+        <NavLink style={navLinkStyles} to="/employees">
+          Employees
+        </NavLink>
+        <NavLink style={navLinkStyles} to="/">
+          Sign Up
+        </NavLink>
+        <NavLink style={navLinkStyles} to="login">
+          Log in
+        </NavLink>
       </nav>
     </>
   );
