@@ -5,7 +5,7 @@ export default class DeleteModal extends Component {
   render() {
     return (
       <>
-        <Modal show={this.props.DeleteModal} onHide={handleClose}>
+        <Modal show={this.props.showDeleteModal} onHide={this.props.handleClose}>
           <Modal.Header closeButton>
             <Modal.Title>Delete Field</Modal.Title>
           </Modal.Header>
@@ -13,7 +13,7 @@ export default class DeleteModal extends Component {
             If you clicked on Delete Button This Field will be removed!
           </Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
+            <Button variant="secondary" onClick={this.props.handleClose}>
               Cancle
             </Button>
             <Button variant="primary" onClick={this.props.handleDeleteForm}>
