@@ -4,7 +4,8 @@
   background-color: #61dafb;
   border-bottom: 2px solid #282c34;
   margin-bottom: 20px;
-  height:200px;
+  height:50px;
+  align-items: center;
 }
 .tableDiv{
   text-align: center;

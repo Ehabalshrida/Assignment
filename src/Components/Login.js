@@ -10,7 +10,7 @@ export default function Login() {
     e.preventDefault();
     console.log({ userName: userName, password: password });
     if (userName == "test@desaisiv.com" && password == "P@ssw0rd") {
-      swal("You Have Sucess Login");
+      // swal("You Have Sucess Login");
       navigate('employees');
     } else {
       swal("You have Entered Wronge Values");
