@@ -101,8 +101,8 @@ export default class Employees extends Component {
         {this.state.showDeleteModal && (
           <DeleteModal
             showDeleteModal={this.state.showDeleteModal}
-            handleClose={this.state.handleClose}
-            handleDeleteForm={this.state.handleDeleteForm}
+            handleClose={this.handleClose}
+            handleDeleteForm={this.handleDeleteForm}
           />
         )}
       </>
