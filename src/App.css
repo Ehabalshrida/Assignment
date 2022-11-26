@@ -1,7 +1,75 @@
-.App {
+.nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: #61dafb;
+  border-bottom: 2px solid #282c34;
+}
+table tr th {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  color: aquamarine;
+  background-color: #282c34;
+}
+table tr td{
+  background-color: gray;
+}
+table tr td:nth-child(3) {
+  display: flex;
+  justify-content: space-between;
+}
+table tr td:nth-child(3) button:nth-child(1) {
+  background-color: green;
+}
+table tr td:nth-child(3) button:nth-child(2) {
+  background-color: red;
+}
+.form {
+  background-color: blueviolet;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 35%;
+  height: 400%;
   text-align: center;
+  margin: 20%;
+  margin-top: 10%;
+  border-radius: 20px;
+}
+.form input[type="text"] {
+  margin-top: 5%;
+  border: blue;
+  height: 50px;
+  border-radius: 10px;
 }
 
+.form input[type="password"] {
+  margin-top: 5%;
+  border: blue;
+  height: 50px;
+  border-radius: 10px;
+}
+
+.form select {
+  margin-top: 5%;
+  border: blue;
+  height: 50px;
+  width: 180px;
+  border-radius: 10px;
+}
+
+.form button {
+  margin-top: 5%;
+  border: blue;
+  height: 50px;
+  width: 100px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+.form legend {
+  text-align: start;
+  margin-top: 10px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
